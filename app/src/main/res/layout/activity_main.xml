@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#212121"
+    android:layout_height="match_parent"
+    tools:context="com.example.katiebehrmann.thegreenlight.MainActivity">
+
+    <TextView
+        android:id="@+id/greenlightTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Greenlight It!"
+        android:textColor="@color/colorAccent"
+        android:textSize="64dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="8dp"
+        android:id="@+id/logo"
+        android:src="@drawable/smallslate"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/greenlightTitle" />
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/homepage"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY THE GAME"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="playGame"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+    </Button>
+
+</RelativeLayout>

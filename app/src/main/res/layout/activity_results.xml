@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#212121"
+    android:layout_height="match_parent"
+    tools:context="com.example.katiebehrmann.thegreenlight.Results">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/realreason"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:layout_margin="8dp"
+        android:text="Surprise! This wasn't just about making blockbusters. It's about the representation of women in Hollywood." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:id="@+id/festival"
+        android:textSize="15dp"
+        android:layout_below="@+id/realreason"
+        android:gravity="center"
+        android:text="...but what did you expect at the Culture, Media, and Education Festival?" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:id="@+id/yourResults"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text=""
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/festival" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bechdel"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:id="@+id/bechdel"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_marginBottom="70dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="findOutMore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="find out more"
+        android:padding="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#212121"
+    android:layout_height="match_parent"
+    tools:context="com.example.katiebehrmann.thegreenlight.ExplainGame">
+
+    <TextView
+        android:id="@+id/blockbuster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Your potential blockbuster will appear here"
+        android:textColor="@color/colorAccent"
+        android:textSize="48dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blockbuster"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="...with a description down here"
+        android:textSize="22dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="playGameAlready"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:text="LET'S MAKE SOME HOLLYWOOD HITS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/red"
+        android:text="Smash this button if you've got a dud :("
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:background="#FF0800"
+        android:layout_marginBottom="125dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:background="#00FF23"
+        android:layout_height="100dp"
+        android:id="@+id/green"
+        android:text="Smash this button to greenlight a hit!"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="125dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#212121"
+    android:layout_height="match_parent"
+    tools:context="com.example.katiebehrmann.thegreenlight.PlayGame">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Angel Investors"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/titleofmovie" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/angels"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titleofmovie"
+        android:id="@+id/movie_image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_copy"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/movie_image"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="@string/angel_investors" />
+
+    <Button
+        android:id="@+id/red"
+        android:onClick="redLight"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:text="DUD"
+        android:background="#FF0800"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:background="#00FF23"
+        android:layout_height="100dp"
+        android:id="@+id/green"
+        android:text="SMASH HIT"
+        android:onClick="greenLight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>
